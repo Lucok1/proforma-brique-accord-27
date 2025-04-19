@@ -1,5 +1,5 @@
-
 import React from 'react';
+import { ExternalLink } from 'lucide-react';
 
 const Invoice = () => {
   return (
@@ -105,6 +105,64 @@ const Invoice = () => {
               <div>
                 <p className="font-semibold">Signature du témoin :</p>
                 <p>Mr WALIOU ADEKU</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* New Section: Projets Web Précédents */}
+        <div className="bg-white shadow rounded-lg p-6">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Projets Web Précédents</h2>
+          
+          <div className="space-y-4">
+            <p className="text-gray-600 mb-4">
+              Voici quelques-uns des projets web que j'ai développés ou auxquels j'ai contribué :
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-4">
+              <div className="border rounded-lg p-4 hover:shadow-md transition-shadow">
+                <h3 className="font-semibold text-lg mb-2">Sortir BF</h3>
+                <a 
+                  href="https://sortir.bf/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-blue-600 hover:text-blue-800 flex items-center"
+                >
+                  sortir.bf <ExternalLink className="ml-2 w-4 h-4" />
+                </a>
+                <p className="text-sm text-gray-500 mt-2">
+                  Un site web de référence pour les activités et sorties au Burkina Faso.
+                </p>
+              </div>
+
+              <div className="border rounded-lg p-4 hover:shadow-md transition-shadow">
+                <h3 className="font-semibold text-lg mb-2">Jiji Côte d'Ivoire</h3>
+                <a 
+                  href="https://jiji.co.ci/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-blue-600 hover:text-blue-800 flex items-center"
+                >
+                  jiji.co.ci <ExternalLink className="ml-2 w-4 h-4" />
+                </a>
+                <p className="text-sm text-gray-500 mt-2">
+                  Une plateforme de petites annonces en ligne pour la Côte d'Ivoire.
+                </p>
+              </div>
+
+              <div className="border rounded-lg p-4 hover:shadow-md transition-shadow">
+                <h3 className="font-semibold text-lg mb-2">Djami</h3>
+                <a 
+                  href="https://djami.ci/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-blue-600 hover:text-blue-800 flex items-center"
+                >
+                  djami.ci <ExternalLink className="ml-2 w-4 h-4" />
+                </a>
+                <p className="text-sm text-gray-500 mt-2">
+                  Un site web dédié aux services et solutions numériques en Côte d'Ivoire.
+                </p>
               </div>
             </div>
           </div>
