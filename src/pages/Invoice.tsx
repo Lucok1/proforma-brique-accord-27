@@ -17,7 +17,7 @@ const Invoice = () => {
             </div>
             <div className="text-right">
               <h1 className="text-xl font-bold text-gray-900">Facture Pro Forma</h1>
-              <p className="text-gray-600">N° : 2025-001</p>
+              <p className="text-gray-600">N° : 2025-015</p>
               <p className="text-gray-600">Date : 19/04/2025</p>
             </div>
           </div>
@@ -60,11 +60,11 @@ const Invoice = () => {
           </div>
 
           <div className="mt-8 text-gray-600">
-            <p className="font-semibold mb-2">Modalités de paiement flexibles :</p>
+            <p className="font-semibold mb-2">Modalités de paiement flexible :</p>
             <ul className="list-disc pl-6 space-y-2">
-              <li>Option 1 : Paiement en une fois (5% de réduction)</li>
-              <li>Option 2 : Paiement en deux fois (50% à la signature, 50% à la livraison)</li>
-              <li>Option 3 : Paiement en trois fois (40% à la signature, 30% au milieu du projet, 30% à la livraison)</li>
+              <li>Option personnalisée 1 : Paiement adapté à votre situation financière</li>
+              <li>Option personnalisée 2 : Échelonnement du règlement selon vos capacités</li>
+              <li>Option personnalisée 3 : Flexibilité totale dans le paiement</li>
             </ul>
             <p className="mt-4">Validité de l'offre : 30 jours</p>
             <p className="text-blue-600">Un reçu officiel sera fourni pour chaque paiement effectué</p>
