@@ -1,5 +1,5 @@
+
 import React from 'react';
-import { ExternalLink } from 'lucide-react';
 
 const Invoice = () => {
   return (
@@ -60,8 +60,14 @@ const Invoice = () => {
           </div>
 
           <div className="mt-8 text-gray-600">
-            <p>Modalités de paiement : Paiement en une fois</p>
-            <p>Validité de l'offre : 30 jours</p>
+            <p className="font-semibold mb-2">Modalités de paiement flexibles :</p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Option 1 : Paiement en une fois (5% de réduction)</li>
+              <li>Option 2 : Paiement en deux fois (50% à la signature, 50% à la livraison)</li>
+              <li>Option 3 : Paiement en trois fois (40% à la signature, 30% au milieu du projet, 30% à la livraison)</li>
+            </ul>
+            <p className="mt-4">Validité de l'offre : 30 jours</p>
+            <p className="text-blue-600">Un reçu officiel sera fourni pour chaque paiement effectué</p>
           </div>
         </div>
 
@@ -74,25 +80,35 @@ const Invoice = () => {
           <p className="font-semibold mb-4">Objet : Engagement de prestation</p>
 
           <div className="space-y-4 text-gray-600">
-            <p>
-              Moi, Seydou Zidouemba, développeur web freelance, m'engage à réaliser la prestation suivante
-              pour Cornerstone Briques, comprenant :
+            <p className="text-lg font-medium text-gray-800 mb-6">
+              En tant que développeur web passionné et expérimenté, je m'engage solennellement auprès de Cornerstone Briques à transformer votre vision en réalité digitale.
             </p>
 
-            <ul className="list-disc pl-6 space-y-2">
-              <li>La conception du site web de l'entreprise</li>
-              <li>La mise en place d'une solution de gestion interne</li>
-              <li>La gestion et le marketing des pages sur les réseaux sociaux</li>
-            </ul>
+            <div className="bg-blue-50 p-4 rounded-lg mb-6">
+              <p className="font-medium text-blue-800 mb-4">Cette offre exclusive comprend :</p>
+              <ul className="list-disc pl-6 space-y-3">
+                <li className="text-blue-700">Un site web professionnel et moderne qui représentera parfaitement votre marque</li>
+                <li className="text-blue-700">Une solution de gestion d'usine sur mesure pour optimiser vos opérations</li>
+                <li className="text-blue-700">Une stratégie marketing complète pour vos réseaux sociaux</li>
+              </ul>
+            </div>
 
-            <p>
-              La durée de cet engagement est fixée à trois (03) mois, pour un montant total de 310 000 FCFA,
-              payable selon les modalités convenues.
+            <p className="mb-4">
+              Je m'engage personnellement à livrer un travail d'excellence dans un délai de trois (03) mois, avec un investissement total de seulement 310 000 FCFA. Ce montant représente un excellent rapport qualité-prix pour une solution complète et professionnelle.
             </p>
 
-            <p>
-              Je m'engage à fournir un travail professionnel et à respecter les délais impartis.
-              En tant que témoin de cet engagement, Mr WALIOU ADEKU atteste de la validité de cet accord.
+            <div className="bg-green-50 p-4 rounded-lg mb-6">
+              <p className="font-medium text-green-800">Mes garanties :</p>
+              <ul className="list-disc pl-6 space-y-2 mt-2 text-green-700">
+                <li>Communication transparente et régulière sur l'avancement</li>
+                <li>Respect strict des délais convenus</li>
+                <li>Accompagnement personnalisé tout au long du projet</li>
+                <li>Support technique après livraison</li>
+              </ul>
+            </div>
+
+            <p className="text-gray-800 font-medium">
+              Cette opportunité de collaboration est validée et garantie par Mr WALIOU ADEKU, qui atteste de mon professionnalisme et de la qualité de mon travail.
             </p>
 
             <p>Fait à Lomé, le 19/04/2025</p>
@@ -110,7 +126,7 @@ const Invoice = () => {
           </div>
         </div>
 
-        {/* New Section: Projets Web Précédents */}
+        {/* Section Projets Web Précédents */}
         <div className="bg-white shadow rounded-lg p-6">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Projets Web Précédents</h2>
           
@@ -122,45 +138,33 @@ const Invoice = () => {
             <div className="grid md:grid-cols-3 gap-4">
               <div className="border rounded-lg p-4 hover:shadow-md transition-shadow">
                 <h3 className="font-semibold text-lg mb-2">Sortir BF</h3>
-                <a 
-                  href="https://sortir.bf/" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="text-blue-600 hover:text-blue-800 flex items-center"
-                >
-                  sortir.bf <ExternalLink className="ml-2 w-4 h-4" />
-                </a>
-                <p className="text-sm text-gray-500 mt-2">
+                <div className="space-y-2">
+                  <p className="text-gray-600">Site web complet : </p>
+                  <p className="text-blue-600 break-all">https://sortir.bf/</p>
+                </div>
+                <p className="text-sm text-gray-500 mt-4">
                   Un site web de référence pour les activités et sorties au Burkina Faso.
                 </p>
               </div>
 
               <div className="border rounded-lg p-4 hover:shadow-md transition-shadow">
                 <h3 className="font-semibold text-lg mb-2">Jiji Côte d'Ivoire</h3>
-                <a 
-                  href="https://jiji.co.ci/" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="text-blue-600 hover:text-blue-800 flex items-center"
-                >
-                  jiji.co.ci <ExternalLink className="ml-2 w-4 h-4" />
-                </a>
-                <p className="text-sm text-gray-500 mt-2">
+                <div className="space-y-2">
+                  <p className="text-gray-600">Site web complet : </p>
+                  <p className="text-blue-600 break-all">https://jiji.co.ci/</p>
+                </div>
+                <p className="text-sm text-gray-500 mt-4">
                   Une plateforme de petites annonces en ligne pour la Côte d'Ivoire.
                 </p>
               </div>
 
               <div className="border rounded-lg p-4 hover:shadow-md transition-shadow">
                 <h3 className="font-semibold text-lg mb-2">Djami</h3>
-                <a 
-                  href="https://djami.ci/" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="text-blue-600 hover:text-blue-800 flex items-center"
-                >
-                  djami.ci <ExternalLink className="ml-2 w-4 h-4" />
-                </a>
-                <p className="text-sm text-gray-500 mt-2">
+                <div className="space-y-2">
+                  <p className="text-gray-600">Site web complet : </p>
+                  <p className="text-blue-600 break-all">https://djami.ci/</p>
+                </div>
+                <p className="text-sm text-gray-500 mt-4">
                   Un site web dédié aux services et solutions numériques en Côte d'Ivoire.
                 </p>
               </div>
